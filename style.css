@@ -26,12 +26,33 @@
     }
 }
 
-/* Custom button style for hover border */
+/* Custom navbar button style */
+
+.navbar .btn {
+    ---bs-border-color-translucent: rgb(123, 192, 43);
+}
+
+/* Changing the active and focus state of the buttons on the navbar */
+
+.navbar .btn:active, .navbar .btn:focus,
+.navbar .form-control:active, .navbar .form-control:focus {
+    box-shadow: none;
+}
+
+
+/* Search Icon Button */
+.navbar .d-flex .btn:hover {
+    background-color: #8d029d;
+    color:rgba(255, 255, 255, 0.664);
+}
+
+
+/* Tranzition for hovering */
 .navbar .custom-hover-border {
     border: 2px solid transparent; /* No border by default */
     transition: border 0.5s ease; /* Smooth transition */
 }
 
 .navbar .custom-hover-border:hover {
-    border: 2px solid #8d029d; /* Green border on hover */
+    border-bottom: 4px solid #8d029d; /* Border shows on hover */
 }
