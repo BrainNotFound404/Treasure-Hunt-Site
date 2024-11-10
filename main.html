@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="Logo.jpg">
+    <link rel="icon" type="image/jpg" href="Pictures/Logo.jpg">
     <title>Treasure Hunt</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -11,12 +11,12 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="Navbar">
         <!-- Container for the navbar -->
         <div class="div container-fluid">
                 <!-- Logo on the top-left corner -navbar-->
                 <a class="navbar-brand me-1 me-2-sm" href="#">
-                  <img src="Logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
+                  <img src="Pictures/Logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
                 </a>
 
             <!-- Nanme of the Site -->
@@ -30,9 +30,21 @@
             <!-- Navbar content which will be collapsed -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="btn custom-hover-border nav-link rounded-1 position-relative" href="#">See Products</a>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="btn custom-hover-border rounded-1 nav-link dropdown-toggle" href="#" id="Dropdown-Nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            See Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Product 1</a></li>
+                            <li><a class="dropdown-item" href="#">Product 2</a></li>
+                            <li><a class="dropdown-item" href="#">Product 3</a></li>
+                            <li><a class="dropdown-item" href="#">Product 4</a></li>
+                        </ul>
                     </li>
+
+
                     <li class="nav-item">
                         <a class="btn custom-hover-border nav-link rounded-1 position-relative" href="#">About</a>
                     </li>
@@ -58,42 +70,110 @@
 
         <!-- Image with Overlay Text -->
         <div class="position-relative">
-            <img src="Something_Purple.jpg" alt="" class="img-fluid">
-            <div class="image-overlay">Lorem ipsum dolor sit amet.</div>
+            <img src="Pictures/Galaxy.jpg" alt="" class="img-fluid">
+            <div class="image-overlay">Welcome to the world of fantasy!</div>
         </div>
-
-    <button class="btn custom-hover-border">
-        Hover over me test
-    </button>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias tempora similique exercitationem impedit neque? Doloremque cum nostrum incidunt ea ipsa quam qui, consectetur, assumenda exercitationem facilis quis at libero saepe!
-    </p>
 
     <!-- Container with centered title, content, and images with hover effects -->
-    <div class="container my-5 text-center">
-        <h2 class="main-title">Main Title</h2>
-        <div class="content text-start mx-auto">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod nec nulla at dictum. Nullam sed urna eu magna dapibus commodo.
-            </p>
-        </div>
+    <div class="container my-5 text-center" id="Main-Content">
+        <div class="content-inner">
+            <h1 class="display-3">Main Title</h1>
+            <div class="content mx-auto">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod nec nulla at dictum. Nullam sed urna eu magna dapibus commodo.
+                </p>
+            </div>
 
-        <!-- Image Row with Hover Effects -->
-        <div class="image-row d-flex justify-content-center mt-4">
-            <img src="image1.jpg" alt="Image 1" class="hover-image mx-2">
-            <img src="image2.jpg" alt="Image 2" class="hover-image mx-2">
-            <img src="image3.jpg" alt="Image 3" class="hover-image mx-2">
-        </div>
+            <!-- Image Row with Hover Effects -->
+            <div class="image-row d-flex justify-content-center mt-4">
+                <img src="Pictures/Cat1.jpg" alt="Image 1" class="hover-image mx-2">
+                <img src="Pictures/Cat2.jpg" alt="Image 2" class="hover-image mx-2">
+                <img src="Pictures/Cat3.jpg" alt="Image 3" class="hover-image mx-2">
+                <img src="Pictures/Cat4.jpg" alt="Image 3" class="hover-image mx-2">
+                <img src="Pictures/Cat5.jpg" alt="Image 3" class="hover-image mx-2">
+            </div>
 
-        <!-- Smaller title and additional content below the images -->
-        <h3 class="sub-title mt-5">Smaller Title</h3>
-        <div class="additional-content text-start mx-auto">
-            <p>
-                More detailed information or content can be added here. This section serves as a follow-up to the main content.
-            </p>
+            <!-- Smaller title and additional content below the images -->
+            <h3 class="sub-title mt-5 ">Smaller Title</h3>
+            <div class="additional-content mx-auto">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corporis adipisci alias, laborum, totam molestiae dolor vitae modi, quidem possimus natus. Delectus enim, quos placeat aspernatur error vero eum, exercitationem repellendus praesentium dolorem quibusdam odio non numquam assumenda eius voluptatibus illo ipsum temporibus nisi eaque quia dignissimos rem suscipit. Laborum, nemo. Maxime reprehenderit assumenda facere ea consequatur dolor exercitationem quis, voluptatum odit harum iusto maiores vel quibusdam soluta! Architecto, aliquam optio? Accusantium praesentium vero nulla quae quas velit pariatur, quam dignissimos modi, labore debitis autem voluptatem facere dolore nisi excepturi magni suscipit expedita quia, rerum aut delectus iusto at! Quisquam culpa hic sit laborum. <br> Aperiam facere qui dicta quos illum. Amet ullam, temporibus aliquam asperiores tempore quam minus esse vitae, tempora molestias ipsa animi magni quos ipsum, at corporis pariatur. Soluta ipsum amet exercitationem molestiae illum odio dolorum, numquam quis expedita voluptate doloribus officia nemo officiis itaque quidem illo tempora fuga eius adipisci at ut error. Corrupti, nihil ad beatae possimus fugit laudantium animi vel, ipsa autem culpa deserunt maxime praesentium fuga voluptatibus. Praesentium, molestiae. Cumque impedit dolores a. Dolor omnis non necessitatibus inventore provident unde ratione amet, voluptatem aut odit repudiandae praesentium, voluptas autem quidem sunt obcaecati voluptatibus magnam adipisci? Corrupti magnam minus accusantium molestiae placeat provident fugit, culpa quod sit officiis iste cupiditate fuga nisi non blanditiis velit tempore tempora, hic est. Iusto velit laudantium necessitatibus non iste dignissimos quia. <br> Qui eum doloribus, accusantium dicta in, optio voluptatum magni nostrum sunt deleniti rem iste repellat quos sapiente consectetur quibusdam vel, animi et? Eum molestias libero id rem mollitia alias deserunt possimus, consectetur reiciendis nihil explicabo facere quisquam esse sint reprehenderit soluta suscipit, consequatur deleniti consequuntur qui exercitationem. Quia, pariatur, reprehenderit debitis totam voluptatem ipsa perspiciatis, beatae consectetur aspernatur provident suscipit saepe quaerat fugiat incidunt officia ipsum cum non sit nihil nostrum esse facilis! Blanditiis minus porro molestiae accusantium laboriosam! Odit molestiae officiis rem, aspernatur nesciunt iure id recusandae, doloribus error incidunt qui pariatur ab sapiente porro deleniti dignissimos? Doloremque, error recusandae voluptas quo eum nesciunt similique nulla ipsa, quasi aliquam doloribus nostrum porro nam nobis. Ducimus, quibusdam, velit expedita, non nostrum explicabo aliquam culpa eveniet fugiat necessitatibus ad harum? Optio, quam repellat! Ducimus tempore quia voluptatum repellat voluptate qui at modi provident rerum, quidem accusamus. Molestias commodi, numquam distinctio adipisci esse quibusdam odit consequuntur perferendis debitis reprehenderit sunt maiores vitae dolor quam tempore! Asperiores nisi ipsa magni dolore.
+                </p>
+            </div>
         </div>
     </div>
 
+    <!-- Carousel Items for Products -->
+
+    <div id="Carousel_Products" class="carousel slide mx-auto custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#Carousel_Products" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#Carousel_Products" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#Carousel_Products" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Pictures/Cat1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Pictures/Cat2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Pictures/Cat3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#Carousel_Products" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Carousel_Products" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- Footer -->
+<footer class="bg-light py-4" id="footer">
+        <div class="container text-center">
+            <!-- Logo -->
+            <div class="mb-3">
+                <img src="Pictures/Logo.jpg" alt="Logo" style="width: 50px;" class="rounded-pill">
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="d-flex flex-column align-items-center">
+                <div class="mb-1">
+                    <span>Email: </span>
+                    <a href="mailto:info@example.com">info@example.com</a> |
+                    <a href="mailto:support@example.com">support@example.com</a>
+                </div>
+                <div>
+                    <span>Phone: </span>
+                    <a href="tel:+1234567890">+1 234 567 890</a> |
+                    <a href="tel:+0987654321">+0 987 654 321</a>
+                </div>
+            </div>
+
+            <!-- Back to Top Button -->
+            <div class="mt-3">
+                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-primary">
+                    Back to Top
+                </button>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
