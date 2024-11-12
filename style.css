@@ -123,29 +123,6 @@
     
 }
 
-/*Carousel*/
-
-.custom-carousel {
-    height: 60vh;
-    width: 80%;
-}
-
-/* Ensure the image fills the carousel item without stretching or distorting */
-/* Ensure the images fit properly in the carousel */
-.carousel-item img {
-    width: 100%;        /* Make the image take up the full width of the carousel */
-    height: 100%;       /* Ensure it takes up full height */
-    object-fit: cover;  /* Keep aspect ratio while covering the container */
-  }
-  
-
-@media (max-width: 768px) {
-    .custom-carousel {
-        height: 50vh;
-        width: 100%;
-    }
-}
-
 /* Footer */
 #footer {
     width: 100%;
