@@ -19,8 +19,8 @@
                   <img src="Pictures/Logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
                 </a>
 
-            <!-- Nanme of the Site -->
-            <a class="navbar-brand" href="#">Treasure Hunt</a>
+            <!-- Name of the Site -->
+            <a class="navbar-brand" href="#">Solvecrate</a>
 
             <!-- Change the navbar for mobile: right side will become collapsed -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,15 +53,15 @@
                 </ul>
 
                 <!-- Search bar -->
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <button class="btn rounded-5" type="submit">
-                        <!-- Search icon -->
+                         Search icon
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                         </svg>
                     </button>
                     <input class="form-control me-2 rounded-0" type="search" placeholder="Search" aria-label="Search">
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -108,21 +108,21 @@
                     <div class="card-body">
                         <h4 class="card-title">Product 1</h4>
                         <img src="Pictures/Cat1.jpg" alt="Image 1" class="img-fluid mx-auto d-block mb-3" style="max-height: 200px; object-fit: cover;">
-                        <div class="accordion" id="accordion1">
+                        <div class="accordion">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Product1" aria-expanded="false" aria-controls="collapseOne">
                                         Description
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse">
+                                <div id="Product1" class="accordion-collapse collapse">
                                     <div class="accordion-body">
                                         <h5 class="text-left">Name of Product 1</h5>
                                         <p class="text-left">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor nam distinctio exercitationem beatae corrupti iste illo qui ad, eos quaerat facere minus impedit minima voluptates ullam molestias reprehenderit fuga dolore excepturi expedita, ab vel. Id illum soluta consequatur possimus nulla doloribus officia deserunt. Animi dicta quibusdam voluptas neque aliquid.
                                         </p>
                                     </div>
-                                    <a href="Products/Product1.html" class="btn custom-btn rounded-1 position-relative mb-3 mu-0"> See More </a>
+                                    <a href="Products/Product1.html" class="btn custom-btn rounded-1 position-relative mb-3 mu-0 rounded-pill"> See More </a>
                                 </div>
                             </div>
                         </div>
@@ -150,6 +150,7 @@
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, provident! Sint quidem accusamus nostrum excepturi culpa distinctio ipsam omnis, illo eveniet saepe eaque praesentium aliquid qui exercitationem beatae esse nam libero. In tempora nihil quo sed corrupti laudantium accusamus hic cumque asperiores ipsa. Dolorem ut, quis id impedit nihil ad.
                                         </p>
                                     </div>
+                                    <a href="Products/Product2.html" class="btn custom-btn rounded-1 position-relative mb-3 mu-0 rounded-pill"> See More </a>
                                 </div>
                             </div>
                         </div>
@@ -177,6 +178,7 @@
                                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut omnis minima suscipit nulla. Deleniti esse eius quisquam dolorum debitis similique provident, vero vitae eligendi obcaecati fuga, numquam impedit possimus exercitationem. Nihil voluptatibus autem laborum, iste repellat, harum cum repellendus quam, eveniet aliquam illum consequuntur! Provident rem quod ut aliquam sequi?
                                         </p>
                                     </div>
+                                    <a href="Products/Product3.html" class="btn custom-btn rounded-1 position-relative mb-3 mu-0 rounded-pill"> See More </a>
                                 </div>
                             </div>
                         </div>
@@ -188,15 +190,24 @@
         </div>
 
     </div>
-</div>
+
 
     <!-- Footer -->
-<footer class="bg-light py-4" id="footer">
-        <div class="container text-center">
-            <!-- Logo -->
+    <footer class="bg-light py-4 row" id="footer">
+
+        <div class="col-lg-3 ">
+            <img src="Pictures/Logo.jpg" alt="Solvecrate Logo" class="footer-logo rounded">
+        </div>
+
+        <div class="container text-center col-6-lg">
+            <!-- Logo 
             <div class="mb-3">
                 <img src="Pictures/Logo.jpg" alt="Logo" style="width: 50px;" class="rounded-pill">
-            </div>
+            </div> -->
+
+            <h1 class="footer-title handwritten-font" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                Solvecrate
+            </h1>
             
             <!-- Contact Information -->
             <div class="d-flex flex-column align-items-center">
@@ -212,12 +223,6 @@
                 </div>
             </div>
 
-            <!-- Back to Top Button -->
-            <div class="mt-3">
-                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="btn btn-primary">
-                    Back to Top
-                </button>
-            </div>
         </div>
     </footer>
     

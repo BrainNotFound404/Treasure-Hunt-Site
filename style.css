@@ -1,3 +1,9 @@
+
+/*A font for fancy hand-written text */
+.handwritten-font {
+    font-family: 'Pacifico', cursive;
+}
+
 /* Styling for the main image */
 .img-fluid {
     width: 100%;
@@ -49,7 +55,7 @@
 
 /* Tranzition for hovering */
 .navbar .custom-hover-border {
-    border: 2px solid transparent; /* No border by default */
+    border: 4px solid transparent; /* No border by default */
     transition: border 0.5s ease; /* Smooth transition */
 }
 
@@ -97,6 +103,7 @@
 #Main-Content .hover-image:hover {
     transform: scale(1.5); /* Scale up on hover */
     filter: none; /* Keep hovered image colored */
+    z-index: 3;
 }
 
 /* Gray out non-hovered images */
@@ -123,7 +130,33 @@
     
 }
 
+/* Styling the Product Cards */
+
+/* "See More" Buttons */
+.card .custom-btn {
+    border:2px solid rgba(121, 112, 112, 0.874);
+}
+
+.card .custom-btn:hover {
+    border: 2px solid rgba(71, 70, 70, 0.511);
+    background-color: #8c888880;
+    color: white;
+}
+
+
 /* Footer */
+
+#footer .footer-title {
+    font-size: 2.2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+#footer .footer-logo {
+    width: 100px;
+    height: 100px;
+}
+
 #footer {
     width: 100%;
     position: relative;
@@ -138,9 +171,4 @@
 
 #footer a:hover {
     text-decoration: underline;
-}
-
-#footer .btn-primary {
-    font-size: 0.9rem;
-    padding: 8px 20px;
 }
