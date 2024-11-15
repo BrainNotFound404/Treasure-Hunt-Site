@@ -50,6 +50,9 @@
     border-bottom: 4px solid #8d029d; /* Border shows on hover */
 }
 
+
+
+
 /* Main Content */
 #Main-Content {
     background-color: #f8f9fa;
@@ -57,6 +60,12 @@
     padding: 3rem;
     margin-top: 3rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+}
+
+#Main-Content .content-inner {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 img.img-fluid {
@@ -64,24 +73,26 @@ img.img-fluid {
     height: auto;
 }
 
-.difficulty-bar {
-    display: flex;
-    gap: 10px;
+/* Custom Carousel */
+
+
+.carousel-inner img {
+    max-width: 100%;        /* Limit width to 100% of the container */
+    height: 60vh;          /* Set a fixed height */
+    object-fit: fill;      /* Ensure the image fits properly without stretching */
 }
 
-.dot {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgb(118, 117, 117);
-    transition: background-color 0.3s;
+
+/* Make the icon size responsive */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3vw;  /* Set width based on viewport width */
+    height: 3vw; /* Set height based on viewport width */
 }
 
-#difficulty-text {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-}
+
+
+
 
 
 /* Footer */

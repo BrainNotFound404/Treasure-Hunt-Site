@@ -1,7 +1,7 @@
 
 /*A font for fancy hand-written text */
 .handwritten-font {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Dancing Script', cursive;
 }
 
 /* Styling for the main image */
@@ -34,8 +34,25 @@
 
 /* Custom navbar button style */
 
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .navbar .btn {
     ---bs-border-color-translucent: rgb(123, 192, 43);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* Hide the dropdown arrow */
+.nav-item .nav-link::after {
+    display: none;
 }
 
 /* Changing the active and focus state of the buttons on the navbar */
@@ -45,11 +62,9 @@
     box-shadow: none;
 }
 
-
-/* Search Icon Button */
-.navbar .d-flex .btn:hover {
-    background-color: #8d029d;
-    color:rgba(255, 255, 255, 0.664);
+.navbar .dropdown-item {
+    font-size: 1.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 
@@ -67,12 +82,12 @@
 
 /* Styling for Main-Content container */
 #Main-Content {
-    background-color: #f8f9fa; /* Slightly darker background */
-    border-radius: 10px; /* Rounded edges */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    padding: 3rem; /* Adds padding inside the container */
-    margin-top: 3rem; /* Adds some space from the elements above */
-    max-width: 1000px; /* Wider box */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 3rem; 
+    margin-top: 3rem;
+    max-width: 1000px;
 }
 
 #Main-Content .content-inner {
@@ -147,14 +162,17 @@
 /* Footer */
 
 #footer .footer-title {
-    font-size: 2.2rem;
+    font-size: 4rem;
     color: #000;
     cursor: pointer;
 }
 
-#footer .footer-logo {
-    width: 100px;
-    height: 100px;
+#footer-content {
+    display: flex;
+}
+
+#footer-logo {
+    margin-right: 30vh;
 }
 
 #footer {
@@ -171,4 +189,18 @@
 
 #footer a:hover {
     text-decoration: underline;
+}
+
+/* Styles for Small Screens */
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    #footer-logo {
+        margin-right: 0; /* Remove horizontal spacing */
+        margin-bottom: 15px; /* Add spacing below the logo */
+    }
 }
